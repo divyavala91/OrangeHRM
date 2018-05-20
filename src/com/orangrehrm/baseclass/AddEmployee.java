@@ -23,6 +23,7 @@ public class AddEmployee  extends Constants{
 		int rowCount=eo.getRowCount(empList,0);
 		Menu menu=PageFactory.initElements(driver,Menu.class);
 		AddEmployeePage aep=PageFactory.initElements(driver,AddEmployeePage.class);
+		system.out.println("hello world");
 		String runMode=eo.getCellData(dataEngine, 0,2,2);
 		if(runMode.equals("N"))
 			throw new SkipException("AddEmp Testcase skipped");
